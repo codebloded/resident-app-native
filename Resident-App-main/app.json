@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Resident's | NS",
+    "slug": "residents-ns",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "residents-ns",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#010409"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "askForPermissions": true,
+          "icon": "./assets/icon.png",
+          "color": "#fff"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app wants access to your photos to let you select an avatar."
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.resident-ns.Resident-NS",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#121212"
+      },
+      "package": "com.resident_ns.Resident_NS",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": ""
+  }
+}
